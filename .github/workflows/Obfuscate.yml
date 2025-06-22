@@ -31,11 +31,11 @@ jobs:
       - name: Download and extract latest BPB worker
         run: |
          wget https://github.com/liangrong0001/lr002/blob/main/worker.js
-          mv _worker.js origin.js
+        
 
       - name: Obfuscate BPB worker js
         run: |
-          javascript-obfuscator origin.js --output _worker.js \
+          javascript-obfuscator worker.js --output _worker.js \
           --compact true \
           --identifier-names-generator hexadecimal \
           --rename-globals true \
