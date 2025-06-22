@@ -30,7 +30,7 @@ jobs:
 
       - name: Download and extract latest BPB worker
         run: |
-          wget https://objects.githubusercontent.com/github-production-release-asset-2e65be/745612559/7416f848-b114-4985-9f79-d7282b4865d7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250622%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250622T020757Z&X-Amz-Expires=1800&X-Amz-Signature=a865e4a08c40d3a32ed2736cd398837e585d3e6bb062fd7d68de2f7b599278a1&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dworker.zip&response-content-type=application%2Foctet-stream
+          wget https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/tag/v3.3.5/worker.zip
           unzip -o worker.zip
           mv _worker.js origin.js
 
